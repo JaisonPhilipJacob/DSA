@@ -11,3 +11,7 @@ a
 -src/main/java/org/jpj/learning/ShellSort.java,1/0/106668b2e7655364a3345e4a04356f79065ad512
 ]
 -src/main/java/org/jpj/learning/Recursion.java,4/d/4d3ae51428ae8787fff4f7752a2487cffc377024
+]
+-src/main/java/org/jpj/learning/MergeSort.java,9/6/96f08b8af1e98e6baa6a5bc9e2e13bd2e957c839
+]
+-src/main/java/org/jpj/learning/QuickSort.java,5/2/52957940054e0b503df78bd507c571337029db2e
