@@ -18,9 +18,6 @@ public class QuickSort {
 
         int pivotIndex = partition(input, start, end);
         quickSort(input, start, pivotIndex);
-        for (int i = 0; i < input.length; i++) {
-            System.out.println(input[i]);
-        }
         quickSort(input, pivotIndex + 1, end);
     }
 
