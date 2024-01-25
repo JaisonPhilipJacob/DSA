@@ -1,4 +1,4 @@
-package academy.learnprogramming.challenge1;
+package org.jpj.datastructure.lists.linkedlist.challenge.challenge1;
 
 public class Employee {
 

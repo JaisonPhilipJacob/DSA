@@ -1,4 +1,6 @@
-package academy.learnprogramming.doublylinkedlists;
+package org.jpj.datastructure.lists.linkedlist.doublylinkedlists;
+
+import org.jpj.datastructure.lists.linkedlist.common.Employee;
 
 public class EmployeeNode {
 
