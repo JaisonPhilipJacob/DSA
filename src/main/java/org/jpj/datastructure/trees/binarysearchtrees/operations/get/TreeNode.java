@@ -1,10 +1,14 @@
-package org.jpj.datastructure.trees.binarysearchtrees.traversal.inorder;
+package org.jpj.datastructure.trees.binarysearchtrees.operations.get;
 
 public class TreeNode {
 
     private int data;
     private TreeNode leftChild;
     private TreeNode rightChild;
+
+    public TreeNode(int data) {
+        this.data = data;
+    }
 
     public void insert(int value) {
         if (value == data) {
@@ -29,6 +33,43 @@ public class TreeNode {
         }
     }
 
+    public TreeNode get(int value) {
+        if (value == data) {
+            return this;
+        }
+
+        if (value < data) {
+            if (leftChild != null) {
+                return leftChild.get(value);
+            }
+        }
+        else {
+            if (rightChild != null) {
+                return rightChild.get(value);
+            }
+        }
+
+        return null;
+    }
+
+    public int min() {
+        if (leftChild == null) {
+            return data;
+        }
+        else {
+            return leftChild.min();
+        }
+    }
+
+    public int max() {
+        if (rightChild == null) {
+            return data;
+        }
+        else {
+            return rightChild.max();
+        }
+    }
+
     public void traverseInOrder() {
         if (leftChild != null) {
             leftChild.traverseInOrder();
@@ -37,10 +78,6 @@ public class TreeNode {
         if (rightChild != null) {
             rightChild.traverseInOrder();
         }
-    }
-
-    public TreeNode(int data) {
-        this.data = data;
     }
 
     public int getData() {
@@ -65,5 +102,9 @@ public class TreeNode {
 
     public void setRightChild(TreeNode rightChild) {
         this.rightChild = rightChild;
+    }
+
+    public String toString() {
+        return "Data = " + data;
     }
 }

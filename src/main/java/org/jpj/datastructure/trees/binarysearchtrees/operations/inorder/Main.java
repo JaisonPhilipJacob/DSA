@@ -1,4 +1,4 @@
-package org.jpj.datastructure.trees.binarysearchtrees;
+package org.jpj.datastructure.trees.binarysearchtrees.operations.inorder;
 
 public class Main {
 
@@ -13,6 +13,7 @@ public class Main {
 	    intTree.insert(26);
 	    intTree.insert(22);
 	    intTree.insert(32);
-		
+
+	    intTree.traverseInOrder();
     }
 }

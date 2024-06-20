@@ -1,4 +1,4 @@
-package org.jpj.datastructure.trees.binarysearchtrees;
+package org.jpj.datastructure.trees.binarysearchtrees.operations.inorder;
 
 public class TreeNode {
 
@@ -26,6 +26,16 @@ public class TreeNode {
             else {
                 rightChild.insert(value);
             }
+        }
+    }
+
+    public void traverseInOrder() {
+        if (leftChild != null) {
+            leftChild.traverseInOrder();
+        }
+        System.out.print(data + ", ");
+        if (rightChild != null) {
+            rightChild.traverseInOrder();
         }
     }
 
